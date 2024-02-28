@@ -1,0 +1,153 @@
+/* Cores */
+:root {
+    --cor-primaria: #009900;
+    --cor-secundaria: #333333;
+    --cor-terciaria: #555555;
+    --cor-quaternaria: #666666;
+    --cor-destaque: #990000;
+}
+
+/* Redefinição de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do container principal */
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do header */
+header {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilos da main */
+main {
+    padding: 20px;
+
+}
+
+/* Estilos das seções */
+section {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-terciaria);
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilos dos campos */
+.campo {
+    margin-bottom: 10px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid var(--cor-quaternaria);
+    border-radius: 5px;
+}
+
+.campo textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Estilos da seção histórico médico */
+.historico-medico .campo {
+    display: flex;
+    align-items: center;
+}
+
+.historico-medico .campo label {
+    margin-right: 10px;
+}
+
+.historico-medico a {
+    text-align: right;
+    color: var(--cor-primaria);
+    font-style: italic;
+    text-decoration: none;
+    border-bottom: 1px solid var(--cor-primaria);
+}
+
+/* Estilos da seção opções */
+.opcoes {
+    text-align: left;
+}
+
+/* Estilos da seção medicação atual */
+.medicacao-atual .campo {
+    margin-bottom: 15px;
+}
+
+.medicacao-atual .campo p {
+    margin-bottom: 10px;
+}
+
+.medicacao-atual .opcoes-medicacao {
+    display: flex;
+    align-items: center;
+}
+
+.medicacao-atual .opcoes-medicacao label {
+    margin-right: 10px;
+}
+
+/* Estilos do footer */
+footer {
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+footer button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: 1px solid var(--cor-terciaria);
+    background-color: #fff;
+    color: var(--cor-secundaria);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: var(--cor-primaria);
+    color: #fff;
+}
+
+/* Estilos das imagens */
+.informacoes-pessoais img {
+    width: 100px;
+
+}

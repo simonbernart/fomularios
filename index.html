@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>INFORMAÇÕES PESSOAIS</h1>
+        </header>
+        <main>
+            <section class="informacoes-pessoais">
+                <h2>Dados Pessoais</h2>
+                <!-- <img src="imagens/foto-perfil.png" alt="Foto do Perfil"> -->
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                </div>
+                <div class="campo">
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento">
+                </div>
+                <div class="campo">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone">
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email">
+                </div>
+            </section>
+            <section class="historico-medico">
+                <h2>Histórico Médico</h2>
+                <div class="campo">
+                    <label for="variola">Variola:</label>
+                    <input type="checkbox" id="variola" name="variola">
+                </div>
+                <div class="campo">
+                    <label for="caxumba">Caxumba:</label>
+                    <input type="checkbox" id="caxumba" name="caxumba">
+                </div>
+                <div class="campo">
+                    <label for="tonturas">Tonturas:</label>
+                    <input type="checkbox" id="tonturas" name="tonturas">
+                </div>
+                <div class="campo">
+                    <label for="espirros">Espirros:</label>
+                    <input type="checkbox" id="espirros" name="espirros">
+                </div>
+                <a href="#">mais detalhes do histórico médico</a>
+            </section>
+            <section class="opcoes">
+                <h2>Opções</h2>
+                <select id="opcoes" name="opcoes">
+                    <option value="">Selecione uma opção</option>
+                    <option value="cardiaco">Cardíaco</option>
+                    <option value="hipertenso">Hipertenso</option>
+                    <option value="diabetico">Diabético</option>
+                    <option value="nenhum">Nenhum</option>
+                </select>
+            </section>
+            <section class="medicacao-atual">
+                <h2>Medicação Atual</h2>
+                <div class="campo">
+                    <p>Você faz uso de algum medicamento?</p>
+                    <div class="opcoes-medicacao">
+                        <label for="sim">Sim:</label>
+                        <input type="radio" id="sim" name="medicacao" value="sim">
+                        <label for="nao">Não:</label>
+                        <input type="radio" id="nao" name="medicacao" value="nao">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label for="medicamento-informado">Se faz uso de algum medicamento, informe-o no espaço abaixo:</label>
+                    <textarea id="medicamento-informado" name="medicamento-informado" placeholder="Digite o nome do medicamento e a dosagem"></textarea>
+                </div>
+                <!-- <img src="imagens/medicamentos.png" alt="Medicamentos"> -->
+            </section>
+        </main>
+        <footer>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </footer>
+
